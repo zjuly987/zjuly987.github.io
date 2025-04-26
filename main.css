@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background: url("images/waterfall-water-mist-person.jpg") no-repeat center center/cover;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+.background-image1 {
+  width: 100%;
+  height: 100%;
+  background: url("images/images.jpg") no-repeat center center/cover;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  color: #fff;
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links span {
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 257px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  max-width: 726px;
+  margin: 100px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.sub-text {
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 525px;
+  margin: 20px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.book-now-btn {
+  width: 240px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 40px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.book-now-btn span {
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 40px;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  width: 395px;
+  height: 315px;
+  background: rgba(187, 223, 249, 0.42);
+  border: 3px solid rgba(255, 255, 255, 0.28);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 300px;
+}
+
+.feature-box h3 {
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature-box p {
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .hero-text {
+      font-size: 60px;
+      max-width: 600px;
+  }
+
+  .nav-links {
+      gap: 20px;
+  }
+
+  .nav-links span {
+      font-size: 20px;
+  }
+
+  .search-bar {
+      width: 200px;
+  }
+
+  .features {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+      font-size: 50px;
+      max-width: 90%;
+  }
+
+  .logo {
+      font-size: 40px;
+  }
+
+  .nav-links {
+      gap: 15px;
+  }
+
+  .nav-links span {
+      font-size: 18px;
+  }
+
+  .search-bar {
+      width: 150px;
+      height: 35px;
+  }
+
+  .navbar {
+      flex-wrap: wrap;
+      padding: 15px 20px;
+  }
+
+  .features {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-box {
+      width: 100%;
+      max-width: 395px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+      font-size: 36px;
+      margin: 80px 20px;
+  }
+
+  .sub-text {
+      font-size: 16px;
+      margin: 20px;
+  }
+
+  .book-now-btn {
+      width: 200px;
+      margin: 20px;
+  }
+
+  .logo {
+      font-size: 30px;
+  }
+
+  .nav-links {
+      gap: 10px;
+  }
+
+  .nav-links span {
+      font-size: 16px;
+  }
+
+  .search-bar {
+      width: 120px;
+      height: 30px;
+  }
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+
+.nav-links a:visited {
+  color: #fff; /* Đảm bảo liên kết đã nhấp vẫn là màu trắng */
+}
